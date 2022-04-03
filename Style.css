@@ -1,0 +1,334 @@
+/* DEFAULT SETTINGS */
+
+/* body properties */
+body {
+    background: palegoldenrod;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+/* block of content */
+.everything {
+    border-radius: 100px;
+    background: rgb(255, 247, 153);
+    width: 800px;
+    max-width: 100%;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+    display: block;
+    position: relative;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+/* header */
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* change color of the text when user click on it */
+a:active {
+    color: white;
+}
+
+/* navigation bar */
+.choice {
+    font-family: 'Papyrus';
+    font-weight: bold;
+}
+
+
+    .bar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+        /* logo in the bar */
+        .bar .logo {
+            padding: 10px;
+            float: left;
+            /* position: fixed; */
+        }
+
+            .bar .logo a {
+                border-radius: 10px;
+                display: block;
+                height: 51px;
+                width: 51px;
+                background-image: url("Pics/logo.png");
+                transition: background-color 0.5s;
+            }      
+                /* hover logo changes, (also applied to logo icon in the footer) */
+                .logo a:hover {
+                    background-color: black;
+                }
+        
+        /* non-logo items */
+        .bar .item {
+            float: left;
+            min-width: 220px;
+            text-align: center;
+            font-size: 36px;
+        }
+
+            .bar .item a {
+                border-radius: 10px;
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                transition: background-color 0.5s;
+                color: rgb(26, 20, 105);
+            }
+
+                /* non-logo items hover effect */
+                .bar .item a:hover {
+                    background-color: powderblue;
+                }
+
+        /* contact us page */
+        .bar #cont {
+            float: right;
+        }
+        
+/* link to the next page */
+#next {
+    width: 5em;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Papyrus';
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 40%;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+    /* changes when hover it */
+    #next:hover {
+        background-color: mediumseagreen;
+    }
+
+/* ANIMATION SETTINGS */
+
+/* buttons block */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* buttons for animations */
+button {
+    background-color: white;
+    font-family: "Courier New";
+    padding: .5em .5em;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: background-color 0.5s;
+}
+
+    /* hover effect */
+    button:hover {
+        background-color: aqua;
+    }
+
+
+/* animation blocks */
+#box, #box2, #box3{
+    border-radius: 10%;
+    width: 292px;
+    height: 292px;
+    position: relative;
+    margin: 10px auto;
+}
+
+    #box2, #box3 {
+        background-color: white;
+    }
+
+/* balls for animations */
+#ball1, #ball2, #ball3, #ball4, #ball5 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+    #ball1 {
+        background-image: radial-gradient(rgb(255, 128, 128), rgb(255, 51, 51), 	rgb(230, 0, 0), rgb(153, 0, 0), rgb(77, 0, 0), black);
+    }
+
+    #ball2 {
+        background: radial-gradient(lime, rgb(0, 204, 0), rgb(0, 153, 0), rgb(0, 102, 0), rgb(0, 51, 0), black);
+    }
+
+    #ball3 {
+        background: radial-gradient(rgb(128, 128, 255), rgb(51, 51, 255), rgb(0, 0, 230), rgb(0, 0, 153), rgb(0, 0, 77), black);
+    }
+
+    #ball4 {
+        background: radial-gradient(rgb(166, 166, 166), rgb(102, 102, 102), rgb(77, 77, 77), rgb(51, 51, 51), rgb(26, 26, 26), black);
+    }
+
+    #ball5 {
+        background: radial-gradient(rgb(0, 204, 204), rgb(0, 153, 153), rgb(0, 139, 139), rgb(0, 102, 102), rgb(0, 51, 51), black);
+    }
+
+/* hands for animations */
+#right_hand, #right_hand2, #left_hand, #left_hand2 {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+}
+
+    #left_hand, #left_hand2 {
+        background-image: url("Pics/lefthand.png");
+    }
+
+    #right_hand, #right_hand2 {
+        background-image: url("Pics/righthand.png");
+    }
+
+
+/* PAGE 1 SETTINGS */
+
+/* big logo parts */
+#biglogotop, #biglogobot {
+    height: 76px;
+    width: 204px;
+    margin: auto;
+}
+    /* detailed properties */
+    #biglogotop {
+        margin-top: 10px;
+        background-image: url("Pics/biglogotop.png");
+    }
+
+    #biglogobot {
+        margin-bottom: 10px;
+        background-image: url("Pics/biglogobot.png");
+    }
+
+/* name in between big logo */
+#name {
+    display: table;
+    margin: auto;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: "Papyrus";
+}
+
+/* link to the first page of the learning */
+#basics {
+    border-radius: 10px;
+    display: table;
+    margin: 20px auto;
+    font-size: 48px;
+    text-decoration: none;
+    font-family: "Papyrus";
+    transition: background-color 0.5s;
+}
+
+    /* hover effect */
+    #basics:hover {
+        background-color: mediumseagreen;
+    }
+
+/* PAGE 2 SETTINGS */
+
+/* juggling difficulties changes  */
+#levels {
+    list-style-type: none;
+}
+
+    #liststr {
+        list-style-type: "+ ";
+    }
+
+    #listweak {
+        list-style-type: "- ";
+    }
+
+/* trajectory image */
+#trajectory {
+    display: block;
+    margin: auto;
+}
+
+/* FOOTER SETTINGS */
+
+/* footer block */
+footer {
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    background: radial-gradient( lightgreen, mediumseagreen);
+}
+
+    /* list of footer items */
+    .bot {
+        min-width: 450px;
+        list-style-type: none;
+        overflow: hidden;
+    }   
+
+        /* applied to all footer items setting */
+        .bot li {
+            padding: 10px;
+            float: left;
+            /* position: fixed; */
+        }
+
+            /* logo item */
+            .bot .logo a {
+                display: block;
+                border-radius: 10px;
+                height: 51px;
+                width: 51px;
+                background-image: url("Pics/logo.png");
+                transition: background-color 0.5s;
+            }
+
+            /* non-logo items */
+            .bot .footeritem a {
+                display: block;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                transition: background-color 1s;
+            }   
+
+                /* background images to social media icons */
+                #facebook a{
+                    background-image: url("Pics/facebook.png");
+                }
+
+                #twitter a{
+                    background-image: url("Pics/twitter.png");
+                }
+
+                #instagram a{
+                    background-image: url("Pics/instagram.png");
+                }
+
+                #map a{
+                    background-image: url("Pics/map.png");
+                }
+
+                #snapchart a{
+                    background-image: url("Pics/snapchart.png");
+                }
+
+                /* non-logo items hover effect */
+                .footeritem a:hover {
+                    background-color: white;
+                }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- set a title and connect css and javascript -->
+        <title>Juggling World</title>
+        <link href='Style.css' rel='stylesheet'>
+        <script src="Script.js"></script>
+    </head>
+
+    <!-- create body and use "defaulthandpos1" function from javascript -->
+    <body onload="defaultpos1()"> 
+
+        <!-- navigation bar -->
+        <div class="choice">
+            <ul class="bar">
+                <li class="logo"><a href='Page 1.htm'></a></li>
+                <li class="item"><a href='Page 2.htm'>Introduction</a></li>
+                <li class="item"><a href="Page 3.htm">Preparation</a></li>
+                <li class="item"><a href="Page 4.htm">Juggling</a></li>
+                <li class="item"><a href="Page 5.htm">Advanced</a></li>
+                <li class="item"><a href="Page 6.htm">Mastery</a></li>
+                <li class="item" id="cont"><a href="Page 7.htm">Contact me</a></li>
+            </ul>
+        </div>
+
+        <!-- create a block of content -->
+        <div class="everything">
+
+            <h1>Preparation</h1>
+
+            <!-- part 1. equipment -->
+            <div id="equip">
+
+                <h2>Equipment</h2>
+    
+                <p> 
+                    Any object can be used for juggling. Balls are recommended for beginners.
+                    The best choice will be special balls for juggling or simple tennis balls. 
+                    If case you do not have them, try to look for something that looks like a 
+                    ball, weight around 60g and diameter near to 6.6cm.
+                </p>
+    
+            </div>  
+
+            <!-- part 2. trajectory -->
+            <div id="traj">
+    
+                <h2>The default trajectory</h2>
+    
+                <p> By default the trajectory must be like shown below.</p>
+
+                <img  id = "trajectory" src="Pics/Easy.png">
+                
+                <p> 
+                    Where <span style = "color: red; font-weight: bold;"> red </span> and 
+                    <span style = "color: green; font-weight: bold;">green</span> colours 
+                    represents balls, <span style = "color: purple; font-weight: bold;">purple</span> 
+                    and <span style = "color: black; font-weight: bold;">black</span> - hands.
+                </p>
+
+                <p>However, if the trajectory is different, then you are either a master or clumsy.</p>
+    
+            </div>   
+
+            <!-- part 3. start juggling -->
+            <div id="oneball">
+    
+                <h2>Level 0</h2>
+    
+                <p> Everyone starts with 1 ball.</p>
+                <p> 
+                    Toss it in the air with one hand and catch with the other. <br>
+                    Repeat the previous step starting with the other hand. <br>
+                    Animation can help here.
+                </p>
+                
+                <!-- buttons as the choice and the start point of animation -->
+                <div class="buttons">
+                    <button onclick="Juggle1l()"><b>Left hand</b></button>
+                    <button onclick="Juggle1r()"><b>Right hand</b></button>
+                </div>
+
+                <!-- animation -->
+                <div id="box2">
+                    <div id="left_hand"></div>
+                    <div id="right_hand"></div>
+                    <div id="ball1"></div>
+                </div>
+            </div>
+
+            <!-- link to the next page -->
+            <a id="next" href='Page 4.htm'>Juggling</a>
+        </div>
+    </body>
+
+    <!-- footer with all information about contacts -->
+    <footer>
+        <ul class="bot">           
+            <li class="logo"><a href='Page 1.htm'></a></li> 
+            <li class="footeritem" id="facebook"><a href="https://www.facebook.com/"></a></li>
+            <li class="footeritem" id="twitter"><a href="https://twitter.com/"></a></li>
+            <li class="footeritem" id="instagram"><a href="https://www.instagram.com/"></a></li>
+            <li class="footeritem" id="snapchart"><a href="https://www.snapchat.com/"></a></li>
+            <li class="footeritem" id="map"><a href="https://goo.gl/maps/6pr9obHjk56zZeMz8"></a></li>
+        </ul>
+    </footer>
+</html>
