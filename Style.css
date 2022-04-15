@@ -611,9 +611,3 @@ footer {
         padding: 0;
     }
 }
-
-@media only screen and (orientation: landscape) {
-    body {
-        display:none;
-    }
-}
