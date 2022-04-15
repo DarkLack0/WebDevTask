@@ -518,11 +518,7 @@ footer {
 
 /* if screen become small navigation bar change (current setting will apply to less than 910px size of screen)*/
 @media screen and (max-width: 910px) {
-    
-    body {
-        display:none;
-    }
-    
+
     .four {
         display: block;
     }
