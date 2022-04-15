@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- set a title and connect css and javascript -->
+        <title>Juggling World</title>
+        <link href='Style.css' rel='stylesheet'>
+        <script src="Script.js"></script>
+    </head>
+
+    <!-- create body and use "defaulthandpos1" function from javascript -->
+    <body onload="defaultpos1()"> 
+
+        <!-- navigation bar -->
+        <div class="choice">
+            <ul class="bar">
+                <li class="logo"><a href='Cover Page.htm'></a></li>
+                <div id="dropdown5">
+                    <li class="item more five"><a href="#">Stages</a></li>
+                    <div id="nextdropdown4">
+                        <li class="item"><a href='Introduction.htm'>Introduction</a></li>
+                        <div id="dropdown4">
+                            <li class="item more four"><a href="#">More</a></li>
+                            <div id="nextdropdown3">
+                                <li class="item chosen"><a href="Preparation.htm">Preparation</a></li>
+                                <div id="dropdown3">
+                                    <li class="item more three"><a href="#">More</a></li>
+                                    <div id="nextdropdown2">
+                                        <li class="item"><a href="Juggling.htm">Juggling</a></li>
+                                        <div id="dropdown2">
+                                            <li class="item more two"><a href="#">More</a></li>
+                                            <div id="twoelems">
+                                                <li class="item"><a href="Advanced.htm">Advanced</a></li>
+                                                <li class="item"><a href="Mastery.htm">Mastery</a></li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="item" id="aboutus"><a href="About us.htm">About us</a></li>
+            </ul>
+        </div>
+
+        <!-- create a block of content -->
+        <div class="everything">
+
+            <h1>Preparation</h1>
+
+            <!-- part 1. equipment -->
+            <div id="equip">
+                <img src="Pics/Equipment 1.png" alt="Equipment" style="width: 200px; float:right; padding: 0 10px;">
+                <h2>Equipment</h2>
+    
+                <p> 
+                    Any object can be used for juggling. Balls are recommended for beginners.
+                    The best choice will be special balls for juggling or simple tennis balls. 
+                    In case you do not have them, try to look for something that looks like a 
+                    ball, weight around 60g and diameter near to 6.6cm.
+                </p>
+    
+            </div>  
+
+            <!-- part 2. trajectory -->
+            <h2>The default trajectory</h2>
+            <div id="trajectory">
+    
+                <p> By default the trajectory must be like shown below.</p>
+
+                <img src="Pics/Easy.png" alt="Trajectory" style="height: 250px; float:left; padding: 0 10px;">
+                
+                <p> 
+                    Where <span style = "color: red;"> red </span> and 
+                    <span style = "color: green;">green</span> colours 
+                    represents balls, <span style = "color: purple;"> purple</span> 
+                    and <span style = "color: black;">black</span> - hands.
+                </p>
+
+                <p>However, if the <span>trajectory</span> is different, then you are either a <i>master</i> or <i>clumsy</i>.</p>
+    
+            </div>   
+
+            <!-- part 3. start juggling -->
+            <div id="oneball">
+    
+                <h2>Level 0</h2>
+    
+                <p><i>Everyone starts with 1 ball.</i></p>
+                <p> 
+                    Instruction: <br>
+                    1. Toss ball in the air with one hand and catch with the other. <br>
+                    2. Repeat the action starting with the other hand.
+                </p>
+                
+                <p><i>Animation can help here.</i></p>
+
+                <!-- animation part -->
+                <div class="animation">
+
+                    <!-- buttons as the choice and the start point of animation -->
+                    <div class="buttons">
+                        <button onclick="Juggle1l()"><b>Left hand</b></button>
+                        <button onclick="Juggle1r()"><b>Right hand</b></button>
+                    </div>
+
+                    <!-- animation box-->
+                    <div id="box2">
+                        <div id="left_hand"></div>
+                        <div id="right_hand"></div>
+                        <div id="ball1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- link to the next page -->
+            <a id="next" href='Juggling.htm'>Juggling</a>
+        </div>
+    </body>
+
+    <!-- footer with all information about contacts -->
+    <footer>
+        <button id="contacts" onclick="footeranimation()">Find me</button>
+        <ul class="bot">           
+            <li class="logo"><a href='Cover Page.htm'></a></li> 
+            <li class="footeritem" id="facebook"><a href="https://www.facebook.com/"></a></li>
+            <li class="footeritem" id="twitter"><a href="https://twitter.com/"></a></li>
+            <li class="footeritem" id="instagram"><a href="https://www.instagram.com/"></a></li>
+            <li class="footeritem" id="snapchart"><a href="https://www.snapchat.com/"></a></li>
+            <li class="footeritem" id="map"><a href="https://goo.gl/maps/6pr9obHjk56zZeMz8"></a></li>
+        </ul>
+    </footer>
+</html>
