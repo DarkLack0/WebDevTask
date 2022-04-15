@@ -323,9 +323,16 @@ level {
 
 /* ABOUT US PAGE SETTING */
 
-#aboutinf, #mymissionis {
+aim {
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#mission {
     text-align: center;
-    max-width: 95%;
+    max-width: 90%;
+    margin: auto;
 }
 
 #allcontacts {
