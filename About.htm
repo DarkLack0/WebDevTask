@@ -11,8 +11,7 @@
         <script src="Script.js"></script>
     </head>
 
-    <!-- create body of the page and use "Juggle5" function that activate animations -->
-    <body onload="Juggle5()"> 
+    <body> 
 
         <!-- navigation bar -->
         <div class="choice">
@@ -43,31 +42,51 @@
                     </div>
                 </div>
                 </div>
-                <li class="item" id="about"><a href="About.htm">About</a></li>
+                <li class="item chosen" id="about"><a href="About.htm">About</a></li>
             </ul>
         </div>
 
-        <!-- logo with title -->
-        <div id="biglogotop"></div>
-        <a id="name" href= "Cover Page.htm">Juggling World</a>
-        <div id="biglogobot"></div>
+        <!-- create a block of content -->
+        <div class="everything">
 
-        <!-- link to the first page about juggling -->
-        <a id="tostart" href='Introduction.htm'>Start Learning</a>
+            <!-- about information -->
+            <div id="aboutcontent">
 
-        <!-- juggling animation -->
-        <div id="box">
-            <div id="left_hand"></div>
-            <div id="right_hand"></div>
-            <div id="ball1"></div>
-            <div id="ball2"></div>
-            <div id="ball3"></div>
-            <div id="ball4"></div>
-            <div id="ball5"></div>
+                <h1>About me</h1>
+
+                <img src="Pics/My Mission.png" alt="mymission" style="width: 95%; display: block; margin:auto;">
+
+                <p id="mission"> 
+                    <aim>My mission</aim> is to share <red style="color:red; font-weight: bold;">love</red> 
+                    with everyone by providing a lot of information about juggling including 
+                    <a href="Introduction.htm">how to get started</a>.
+                </p>
+
+            </div>
+
+            <!-- all contact information -->
+            <div id="contact">
+
+                <h2>All Contacts</h2>
+                
+                <ul id="allcontacts">
+                    <li>Email: <a href="mailto:t0306604@ntu.ac.uk">t0306604@ntu.ac.uk</a></li>
+                    <li>Phone: +44-012-345-6789</li>
+                    <li>Facebook: <a href="https://www.facebook.com/">********</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/">********</a></li>
+                    <li>Twitter: <a href="https://twitter.com/">********</a></li>
+                    <li>Snapchart: <a href="https://www.snapchat.com/">********</a></li>
+                    <li>Location: <a href="https://goo.gl/maps/6pr9obHjk56zZeMz8">Belgrave Centre, Chaucer St, Nottingham NG1 5LT </a></li>
+                </ul>
+
+            </div>
+
+            <!-- link to the cover page -->
+            <a id="next" href='Cover Page.htm'>Juggling World</a>
         </div>
     </body>
 
-    <!-- footer with information about contacts -->
+    <!-- footer with all information about contacts -->
     <footer>
         <button id="contacts" onclick="footeranimation()">Contacts</button>
         <ul class="bot">           

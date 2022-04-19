@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- add meta styles to make responive web design -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- set a title and connect css and javascript -->
         <title>Juggling World</title>
         <link href='Style.css' rel='stylesheet'>
@@ -16,31 +18,31 @@
             <ul class="bar">
                 <li class="logo"><a href='Cover Page.htm'></a></li>
                 <div id="dropdown5">
-                    <li class="item more five"><a href="#">Stages</a></li>
-                    <div id="nextdropdown4">
-                        <li class="item chosen"><a href='Introduction.htm'>Introduction</a></li>
-                        <div id="dropdown4">
-                            <li class="item more four"><a href="#">More</a></li>
-                            <div id="nextdropdown3">
-                                <li class="item"><a href="Preparation.htm">Preparation</a></li>
-                                <div id="dropdown3">
-                                    <li class="item more three"><a href="#">More</a></li>
-                                    <div id="nextdropdown2">
-                                        <li class="item"><a href="Juggling.htm">Juggling</a></li>
-                                        <div id="dropdown2">
-                                            <li class="item more two"><a href="#">More</a></li>
-                                            <div id="twoelems">
-                                                <li class="item"><a href="Advanced.htm">Advanced</a></li>
-                                                <li class="item"><a href="Mastery.htm">Mastery</a></li>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <li class="item more five"><a href="#">Stages</a></li>
+                <div id="nextdropdown4">
+                    <li class="item chosen"><a href='Introduction.htm'>Introduction</a></li>
+                    <div id="dropdown4">
+                    <li class="item more four"><a href="#">More</a></li>
+                    <div id="nextdropdown3">
+                        <li class="item"><a href="Preparation.htm">Preparation</a></li>
+                        <div id="dropdown3">
+                        <li class="item more three"><a href="#">More</a></li>
+                        <div id="nextdropdown2">
+                            <li class="item"><a href="Juggling.htm">Juggling</a></li>
+                            <div id="dropdown2">
+                            <li class="item more two"><a href="#">More</a></li>
+                            <div id="twoelems">
+                                <li class="item"><a href="Advanced.htm">Advanced</a></li>
+                                <li class="item"><a href="Mastery.htm">Mastery</a></li>
+                            </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <li class="item" id="aboutus"><a href="About us.htm">About us</a></li>
+                </div>
+                <li class="item" id="about"><a href="About.htm">About</a></li>
             </ul>
         </div>
 
@@ -49,11 +51,11 @@
 
             <h1>Introduction</h1>
 
-            <!-- first part about what is juggling -->
+            <!-- part 1. what is juggling -->
             <div id="intro">
 
                 <h2>What is Juggling?</h2>
-                <img src="Pics/Best Juggler.png" alt="Juggling" style="width: 300px; float:right; padding: 0 10px;">
+                <img src="Pics/Best Juggler.png" alt="Juggling" class="width300 right smchange pic">
                 
                 <p>
                     Juggling is the process of tossing and catching the objects (usually balls) with at least 1 
@@ -62,7 +64,7 @@
                 </p>
             </div>
 
-            <!-- second part about why people need juggling -->
+            <!-- part 2. why people need juggling -->
             <div id = "whyjuggling">
                 <h2>Why do you need to juggle?</h2>
 
@@ -75,12 +77,12 @@
             </div>
 
 
-            <!-- third part about different juggling methods-->
+            <!-- part 3. different juggling methods-->
             <h2>Difficulties of juggling</h2>
             <div id="jugglinglevels">
-                <img src="Pics/LevelsPicture.png" alt="Level pyramid" style="width: 300px; float:left; padding: 0 10px;">
+                <img src="Pics/LevelsPicture.png" alt="Pyramid1" class="width300 left smchange pic">
 
-                <!-- just ordered list here -->
+                <!-- ordered list to make it clear -->
                 <ol id="levels">
                     <li><level>LEVEL 0.</level> Toss 1 ball. Everybody already here.</li>
                     <li><level>LEVEL 1.</level> Toss 2 balls. First exercises appear.</li>
@@ -96,10 +98,10 @@
 
             </div>
             
-            <!-- how much time required to learn juggling -->
+            <!-- part 4. how much time required to learn juggling -->
             <div id="requirements">
                 <h2>What do you need to reach it?</h2>
-                <img src="Pics/TimesPicture.png" alt="Time pyramid" style="width: 300px; float:right; padding: 0 10px;">
+                <img src="Pics/TimesPicture.png" alt="Pyramid2" class="width300 right smchange pic">
                 <ol id="levels">
                     <li><level>LEVEL 0.</level> 1 Second is enough to complete.</li>
                     <li><level>LEVEL 1.</level> It will take around half of hour.</li>
@@ -114,7 +116,7 @@
                 </ol>
             </div>
             
-            <!-- strengths and weaknesses of juggling -->
+            <!-- part 5. strengths and weaknesses of juggling -->
             <div id="strandweaks">
 
                 <h2>Strengths and Weaknesses of Juggling</h2>
@@ -141,9 +143,9 @@
         </div>
     </body>
     
-    <!-- footer with all information about contacts -->
+    <!-- footer with information about contacts -->
     <footer>
-        <button id="contacts" onclick="footeranimation()">Find me</button>
+        <button id="contacts" onclick="footeranimation()">Contacts</button>
         <ul class="bot">           
             <li class="logo"><a href='Cover Page.htm'></a></li> 
             <li class="footeritem" id="facebook"><a href="https://www.facebook.com/"></a></li>

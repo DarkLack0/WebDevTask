@@ -544,30 +544,3 @@ function footeranimationfinish() {
     // finish animation
     footer.style.animationName = "donothing";
 }
-
-// // html animation function
-// function back() {
-
-//     // find html
-//     const all = document.getElementsByTagName("html")[0];
-    
-//     // if animation can be started
-//     if (all.style.animationName === "notbacktostart" || all.style.animationName === ""){
-
-//         // do it
-//         all.style.animationName = "backtostart";
-
-//         // wait 3s until finish
-//         setTimeout(finishback, 750);
-//     }
-// }
-
-// // html animation finish function
-// function finishback() {
-
-//     // find html
-//     const all = document.getElementsByTagName("html")[0];
-    
-//     // finish animation
-//     all.style.animationName = "notbacktostart";
-// }
