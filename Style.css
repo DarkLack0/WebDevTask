@@ -29,7 +29,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-family: Papyrus;
+    font-family: Garamond;
 }
 
 /* change color of the links when user click on them */
@@ -39,7 +39,7 @@ a:active {
 
 /* navigation bar */
 .choice {
-    font-family: 'Papyrus';
+    font-family: Garamond;
     font-weight: bold;
 }
 
@@ -57,7 +57,7 @@ a:active {
 
         /* logo item in the bar (and footer)*/
         .logo {
-            padding: 10px;
+            padding: 5px;
             float: left;
         }
 
@@ -78,8 +78,8 @@ a:active {
         /* non-logo items */
         .bar .item {
             float: left;
-            width: 190px;
-            height: 74px;
+            width: 200px;
+            height: 61px;
             padding: 0 5px;
             text-align: center;
             font-size: 34px;
@@ -88,7 +88,7 @@ a:active {
             .bar .item a {
                 border-radius: 10px;
                 display: block;
-                padding: 10px;
+                padding: 10px 5px;
                 text-decoration: none;
                 transition: background-color 0.5s;
                 color: rgb(26, 20, 105);
@@ -114,7 +114,7 @@ a:active {
     width: 220px;
     border-radius: 10px;
     display: block;
-    font-family: 'Papyrus';
+    font-family: Garamond;
     font-weight: bold;
     text-align: center;
     font-size: 32px;
@@ -247,6 +247,7 @@ a:active {
 
 /* title in between logo */
 #name {
+    padding: 10px;
     border-radius: 10px;
     display: table;
     margin: auto;
@@ -254,17 +255,18 @@ a:active {
     text-decoration: none;
     color: white;
     background-color: black;
-    font-family: Papyrus;
+    font-family: Garamond;
 }
 
 /* link to the introduction of juggling */
 #basics {
+    padding:10px;
     border-radius: 10px;
     display: table;
     margin: 20px auto;
     font-size: 48px;
     text-decoration: none;
-    font-family: Papyrus;
+    font-family: Garamond;
     transition: background-color 0.5s;
 }
 
@@ -324,7 +326,7 @@ level {
 /* ABOUT US PAGE SETTING */
 
 aim {
-    font-family: Papyrus;
+    font-family: Garamond;
     font-weight: bold;
     font-size: larger;
 }
@@ -360,7 +362,7 @@ footer {
         margin-top: 5px;
         height: 1.5em;
         font-size: 32px;
-        font-family: "Math";
+        font-family: Garamond;
         font-weight: bold;
         background-color: transparent;
         border: none;
@@ -563,6 +565,10 @@ footer {
 /* if screen become small navigation bar change (current setting will apply to less than 710px size of screen)*/
 @media screen and (max-width: 710px) {
 
+    html {
+        min-width: 510px;
+    }
+
     .five {
         display: block;
     }
@@ -597,24 +603,4 @@ footer {
 
     
 
-}
-
-/* if screen become very small (less than 510px) decrease sizes of some elements*/
-@media screen and (max-width: 510px) {
-
-    /* and set absolute minimum of all content to 400px */
-    html {
-        min-width: 400px;
-    }
-
-    #nextdropdown4 {
-        margin: 60px 72px;
-    }
-
-    .bar .item {
-        font-size: 26px;
-        width: 150px;
-        height: 60px;
-        padding: 0;
-    }
 }
