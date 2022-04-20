@@ -27,7 +27,7 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    font-family: Garamond;
+    font-family: Garamond, serif;
 }
 
 /* change color of the links when user click on them */
@@ -37,7 +37,7 @@ a:active {
 
 /* navigation bar */
 .choice {
-    font-family: Garamond;
+    font-family: Garamond, serif;
     font-weight: bold;
 }
 
@@ -114,7 +114,7 @@ a:active {
     width: 220px;
     border-radius: 10px;
     display: block;
-    font-family: Garamond;
+    font-family: Garamond, serif;
     font-weight: bold;
     text-align: center;
     font-size: 32px;
@@ -283,7 +283,7 @@ a:active {
     text-decoration: none;
     color: white;
     background-color: black;
-    font-family: Garamond;
+    font-family: Garamond, serif;
 }
 
 /* link to the introduction of juggling */
@@ -294,7 +294,7 @@ a:active {
     margin: 20px auto;
     font-size: 48px;
     text-decoration: none;
-    font-family: Garamond;
+    font-family: Garamond, serif;
     transition: background-color 0.5s;
 }
 
@@ -361,7 +361,7 @@ level {
 
 /* "My mission" words */
 aim {
-    font-family: Garamond;
+    font-family: Garamond, serif;
     font-weight: bold;
     font-size: larger;
 }
@@ -415,7 +415,7 @@ footer {
         margin-top: 5px;
         height: 1.5em;
         font-size: 32px;
-        font-family: Garamond;
+        font-family: Garamond, serif;
         font-weight: bold;
         background-color: transparent;
         border: none;
