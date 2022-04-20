@@ -640,10 +640,13 @@ footer {
 
     #nextdropdown4 .item {
         float:none;
+        font-size: 24px;
     }
 
     #nextdropdown4 .item a{
         border: 1px solid black;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     #dropdown5:hover #nextdropdown4 {
@@ -686,16 +689,16 @@ footer {
     /* other small changes */
     .bar .item {
         width: 160px;
-        font-size: 26px;
-    }
-
-    .bar .item a {
-        padding-top: 14px;
-        padding-bottom: 14px;
     }
 
     .bar #about {
         width: 90px !important;
+    }
+
+    .five a, .bar #about a {
+        font-size: 26px;
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
     }
 
     .bot li {
