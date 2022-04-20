@@ -686,20 +686,31 @@ footer {
         padding-bottom: 10px !important;
     }
 
+    /* footer edges alignment */
+    footer {
+        border-radius: 30px;
+    }
+
     /* other small changes */
     .bar .item {
         width: 160px;
+    }
+
+    .bar .five a{
+        font-size: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .bar #about {
         width: 90px !important;
     }
 
-    .five a, .bar #about a {
-        font-size: 26px;
-        padding-top: 14px !important;
-        padding-bottom: 14px !important;
-    }
+        .bar #about a {
+            font-size: 26px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
 
     .bot li {
         padding-left: 3px;
