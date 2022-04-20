@@ -80,13 +80,13 @@ a:active {
             height: 61px;
             padding: 0 5px;
             text-align: center;
-            font-size: 34px;
+            font-size: 30px;
         }
 
             .bar .item a {
                 border-radius: 10px;
                 display: block;
-                padding: 10px 5px;
+                padding: 12px 5px;
                 text-decoration: none;
                 transition: background-color 0.5s;
                 background-color: white;
@@ -643,11 +643,11 @@ footer {
         font-size: 20px;
     }
 
-    #nextdropdown4 .item a{
-        border: 1px solid black;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
+        #nextdropdown4 .item a{
+            border: 1px solid black;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
 
     #dropdown5:hover #nextdropdown4 {
         display: block;
