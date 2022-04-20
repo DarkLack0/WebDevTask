@@ -513,7 +513,7 @@ footer {
 /* SCREEN RESIZING CHANGES */
 
 /* if screen become small navigation bar change (current setting will apply to less than 1310px size of screen)*/
-@media screen and (max-width: 1310px) {
+@media only screen and (max-width: 1310px) {
 
     .two {
         display: block;
@@ -541,7 +541,7 @@ footer {
 }
 
 /* if screen become small navigation bar change (current setting will apply to less than 1110px size of screen)*/
-@media screen and (max-width: 1110px) {
+@media only screen and (max-width: 1110px) {
 
     .three {
         display: block;
@@ -578,7 +578,7 @@ footer {
 }
 
 /* For tables or small window sizes (less than 910px) */
-@media screen and (max-width: 910px) {
+@media only screen and (max-width: 910px) {
 
     .four {
         display: block;
@@ -615,7 +615,7 @@ footer {
 }
 
 /* for phones (or less 710px screen devices)*/
-@media screen and (max-width: 710px) {
+@media only screen and (max-width: 710px) {
 
     /* navigation bar */
     .five {
