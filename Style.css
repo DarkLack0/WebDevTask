@@ -319,7 +319,7 @@ a:active {
 }
 
 level {
-    font-family: "Math";
+    font-family: 'Courier New', monospace;
     font-weight: bold;
 }
 
@@ -685,17 +685,17 @@ footer {
 
     /* other small changes */
     .bar .item {
-        width: 150px;
-        font-size: 24px;
+        width: 160px;
+        font-size: 26px;
     }
 
     .bar .item a {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
     .bar #about {
-        width: 80px !important;
+        width: 90px !important;
     }
 
     .bot li {
