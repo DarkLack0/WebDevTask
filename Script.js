@@ -203,18 +203,23 @@ function defaultpos2_3() {
 }
 
 // create a global variable "button_free" to check if button is ready to be clicked or not
-let button_free = true;
+let button_free = true, button_free2 = true;
 
 // juggle 1 ball start with left hand
 function Juggle1l() {
     
     // check if button is clickable
     if (button_free) {
-
+        
         // make button unclickable
-        button_free = false;   
-        let starttime = 0;
-        Juggle1(starttime);
+        button_free = false;
+
+        // if ball is not in right hand
+        if (document.getElementById("ball1").style.left === "258.5px") fixposition1("left");
+        else {
+            let starttime = 0;
+            Juggle1(starttime);
+        }
     }
 }
 
@@ -223,11 +228,42 @@ function Juggle1r() {
 
     // check if button is clickable
     if (button_free) {
-
+        
         // make button unclickable
-        button_free = false;   
-        let starttime = 250;
-        Juggle1(starttime);
+        button_free = false;
+
+        // if ball is not in right hand
+        if (document.getElementById("ball1").style.left === "8.5px") fixposition1("right");
+        else {
+            let starttime = 250;
+            Juggle1(starttime);
+        }
+    }
+}
+
+// function that fix ball position
+function fixposition1(version) {
+    document.getElementById("box2").style.opacity = "0";
+    setTimeout(appearring, 500);
+    setTimeout(autostart, 1000);
+
+    function appearring() {
+        document.getElementById("box2").style.opacity = "1";
+
+        if (version === "left") {
+            document.getElementById("ball1").style.left = "8.5px";
+        }
+
+        else {
+            document.getElementById("ball1").style.left = "258.5px";
+        }
+    }
+    
+    function autostart() {
+        button_free = true;
+
+        if (version === "left") Juggle1l();
+        else Juggle1r();
     }
 }
 
@@ -295,19 +331,63 @@ function Juggle1(starttime) {
 
 // juggle 2 balls, starting with left hand
 function Juggle2l() {
+
     if (button_free) {
-        button_free = false;   
-        let starttime = 0;
-        Juggle2(starttime);
+        
+        // make button unclickable
+        button_free = false;
+
+        // if balls are not in right hands
+        if (document.getElementById("ball1").style.left === "258.5px") fixposition2("left");
+        else {
+            let starttime = 0;
+            Juggle2(starttime);
+        }
     }
 }
 
 // juggle 2 balls, starting with right hand
 function Juggle2r() {
     if (button_free) {
-        button_free = false;   
-        let starttime = 350;
-        Juggle2(starttime);
+        
+        // make button unclickable
+        button_free = false;
+
+        // if balls are not in right hands
+        if (document.getElementById("ball1").style.left === "8.5px") fixposition2("right");
+        else {
+            let starttime = 350;
+            Juggle2(starttime);
+        }
+    }
+}
+
+// function that fix ball positions
+function fixposition2(version) {
+
+    document.getElementById("box2").style.opacity = "0";
+    setTimeout(appearring, 500);
+    setTimeout(autostart, 1000);
+
+    function appearring() {
+        document.getElementById("box2").style.opacity = "1";
+
+        if (version === "left") {
+            document.getElementById("ball1").style.left = "8.5px";
+            document.getElementById("ball2").style.left = "258.5px";
+        }
+
+        else {
+            document.getElementById("ball1").style.left = "258.5px";
+            document.getElementById("ball2").style.left = "8.5px";
+        }
+    }
+    
+    function autostart() {
+        button_free = true;
+
+        if (version === "left") Juggle2l();
+        else Juggle2r();
     }
 }
 
@@ -409,17 +489,56 @@ function Juggle2(starttime) {
 
 // juggle 3 balls up to 10
 function Juggle3normal() {
-    if (button_free) {
-        button_free = false;   
-        Juggle3(3);
+    if (button_free2) {
+        
+        // make button unclickable
+        button_free2 = false;
+
+        // if balls are not in the default position
+        if (document.getElementById("ball5").style.left === "258.5px") fixposition3("normal");
+        else Juggle3(3);
     }
 }
 
 // juggle 3 balls slowly
 function Juggle3slowly() {
-    if (button_free) {
-        button_free = false;   
-        Juggle3(10);
+    if (button_free2) {
+        
+        // make button unclickable
+        button_free2 = false;
+
+        // if balls are not in the default position
+        if (document.getElementById("ball5").style.left === "258.5px") fixposition3("slowly");
+        else Juggle3(10);
+    }
+}
+
+// function that fix ball positions
+function fixposition3(speed) {
+
+    document.getElementById("box3").style.opacity = "0";
+    setTimeout(appearring, 500);
+    setTimeout(autostart, 1000);
+
+    function appearring() {
+        document.getElementById("box3").style.opacity = "1";
+
+        const ball3 = document.getElementById("ball3");
+        const ball4 = document.getElementById("ball4");
+        const ball5 = document.getElementById("ball5");
+
+        ball3.style.top = "208.5px";
+        ball3.style.left = "8.5px";
+        ball4.style.top = "208.5px";
+        ball4.style.left = "258.5px";
+        ball5.style.top = "200px";
+        ball5.style.left = "0px";
+    }
+    
+    function autostart() {
+        button_free2 = true;
+        if (speed === "normal") Juggle3normal();
+        else Juggle3slowly();
     }
 }
 
@@ -457,7 +576,7 @@ function Juggle3(step) {
         // when reach stoptime finish the animation
         if (time >= stoptime) {
             clearInterval(process);
-            button_free = true;
+            button_free2 = true;
         }
 
         // set left hand position

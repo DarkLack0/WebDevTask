@@ -91,8 +91,8 @@ a:active {
                 padding: 10px 5px;
                 text-decoration: none;
                 transition: background-color 0.5s;
-                color: rgb(26, 20, 105);
                 background-color: white;
+                color: black;
             }
 
                 .bar .item a:hover {
@@ -101,6 +101,7 @@ a:active {
 
         /* "about' page */
         .bar #about {
+            width: 160px !important;
             float: right;
             padding-right: 10px;
         }
@@ -123,6 +124,8 @@ a:active {
     padding: 10px;
     text-decoration: none;
     transition: background-color 0.5s;
+    background-color: black;
+    color: white;
 }
 
     /* changes when hover it */
@@ -196,6 +199,7 @@ a:active {
 
     #box2, #box3 {
         background-color: white;
+        transition: opacity .5s;
     }
 
 /* animation balls */
@@ -254,7 +258,7 @@ a:active {
 /* COVER PAGE SETTINGS */
 
 /* large logo parts */
-#biglogotop, #biglogobot {
+#biglogotop, #biglogobottom {
     height: 76px;
     width: 204px;
     margin: auto;
@@ -266,7 +270,7 @@ a:active {
     }
 
     /* bottom part */
-    #biglogobot {
+    #biglogobottom {
         margin-bottom: 10px;
         background-image: url("Pics/biglogobot.png");
     }
@@ -333,6 +337,11 @@ level {
 
 /* PREPARATION PAGE SETTINGS */
 
+/* equipment block */
+#equip {
+    display: inline-block;
+}
+
 /* trajectory block */
 #trajectory {
     display: inline-block;
@@ -352,24 +361,43 @@ level {
 
 /* ABOUT US PAGE SETTING */
 
+/* "My mission" words */
 aim {
     font-family: Garamond;
     font-weight: bold;
     font-size: larger;
 }
 
+/* text about mission */
 #mission {
     text-align: center;
     max-width: 90%;
     margin: auto;
 }
 
-#allcontacts {
-    list-style-type: none;
+/* table */
+table, th, td {
+    border: 2px solid black;
 }
-    #allcontacts li {
-        height: 1.5em;
+
+    table {
+        width: 100%;
+        max-width: 560px;
+        margin-bottom: 10px;
     }
+
+    th, td {
+        height: 1.5em;
+        margin: auto 0;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+        td a {
+            text-decoration: none;
+        }
 
 /* FOOTER SETTINGS */
 
@@ -443,8 +471,8 @@ footer {
                     background-image: url("Pics/map.png");
                 }
 
-                #snapchart a{
-                    background-image: url("Pics/snapchart.png");
+                #linkedin a{
+                    background-image: url("Pics/linkedin.png");
                 }
 
                 /* non-logo items hover effect */
@@ -480,7 +508,6 @@ footer {
     }
 
     to {
-        opacity: 0.9;
         background-color: rgb(64, 191, 121);
         background-image: none;
     }
@@ -650,7 +677,7 @@ footer {
         padding-bottom: 14px;
     }
 
-    #about {
+    .bar #about {
         width: 80px !important;
     }
 
