@@ -13,7 +13,7 @@ body {
     background-color: rgb(255, 247, 153);
     width: 90%;
     max-width: 800px;
-    border: 10px;
+    border: 5px;
     border-style: solid;
     border-color: black;
     margin: 5px auto;
@@ -651,6 +651,17 @@ footer {
 
     #dropdown5:hover #nextdropdown4 {
         display: block;
+    }
+
+    /* "Everything" block */
+
+    .everything {
+        border-radius: 50px;
+        width: auto;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
     }
 
     /* other changes */
