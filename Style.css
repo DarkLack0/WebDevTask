@@ -13,9 +13,7 @@ body {
     background-color: rgb(255, 247, 153);
     width: 90%;
     max-width: 800px;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
+    border: 5px solid black;
     margin: 5px auto;
     padding: 10px;
 }
@@ -653,18 +651,26 @@ footer {
         display: block;
     }
 
-    /* "Everything" block */
+    /* background changes */
+
+    body {
+        background-color: rgb(243, 238, 191);
+        animation: none;
+    }
 
     .everything {
         border-radius: 50px;
+        border: 2px solid black;
         width: auto;
+        background-color: rgb(247, 244, 212);
     }
 
+    /* headers align */
     h1, h2, h3 {
         text-align: center;
     }
 
-    /* other changes */
+    /* picture changes */
     .smchange {
         float: none !important;
         display: block;
@@ -678,6 +684,7 @@ footer {
         padding-bottom: 10px !important;
     }
 
+    /* other small changes */
     .bar .item {
         width: 150px;
         font-size: 26px;
