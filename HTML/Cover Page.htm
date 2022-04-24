@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- add meta styles to make responive web design -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- set a title and connect css and javascript -->
+        <title>Juggling World</title>
+        <link href='../CSS/Style.css' rel='stylesheet'>
+        <script src="../JavaScript/Script.js"></script>
+    </head>
+
+    <!-- create body of the page and use "Juggle5" function that activate animations -->
+    <body onload="Juggle5()"> 
+
+        <!-- navigation bar -->
+        <div class="choice">
+            <ul class="bar">
+                <li class="logo"><a href='Cover Page.htm'></a></li>
+                <div id="dropdown5">
+                <li class="item more five"><a href="#">Stages</a></li>
+                <div id="nextdropdown4">
+                    <li class="item"><a href='Introduction.htm'>Introduction</a></li>
+                    <div id="dropdown4">
+                    <li class="item more four"><a href="#">More</a></li>
+                    <div id="nextdropdown3">
+                        <li class="item"><a href="Preparation.htm">Preparation</a></li>
+                        <div id="dropdown3">
+                        <li class="item more three"><a href="#">More</a></li>
+                        <div id="nextdropdown2">
+                            <li class="item"><a href="Juggling.htm">Juggling</a></li>
+                            <div id="dropdown2">
+                            <li class="item more two"><a href="#">More</a></li>
+                            <div id="twoelems">
+                                <li class="item"><a href="Advanced.htm">Advanced</a></li>
+                                <li class="item"><a href="Mastery.htm">Mastery</a></li>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <li class="item" id="about"><a href="About.htm">About</a></li>
+            </ul>
+        </div>
+
+        <!-- logo with title -->
+        <div id="biglogotop"></div>
+        <a id="name" href= "Cover Page.htm">Juggling World</a>
+        <div id="biglogobottom"></div>
+
+        <!-- link to the first page about juggling -->
+        <a id="tostart" href='Introduction.htm'>Start Learning</a>
+
+        <!-- juggling animation -->
+        <div id="box">
+            <div id="left_hand"></div>
+            <div id="right_hand"></div>
+            <div id="ball1"></div>
+            <div id="ball2"></div>
+            <div id="ball3"></div>
+            <div id="ball4"></div>
+            <div id="ball5"></div>
+        </div>
+    </body>
+
+    <!-- footer with information about contacts -->
+    <footer>
+        <button id="contacts" onclick="footeranimation()">Contacts</button>
+        <ul class="bot">           
+            <li class="logo"><a href='Cover Page.htm'></a></li> 
+            <li class="footeritem" id="facebook"><a href="https://www.facebook.com/"></a></li>
+            <li class="footeritem" id="twitter"><a href="https://twitter.com/"></a></li>
+            <li class="footeritem" id="instagram"><a href="https://www.instagram.com/"></a></li>
+            <li class="footeritem" id="linkedin"><a href="https://www.linkedin.com/in/mikhail-teslenko-a2769b237/"></a></li>
+            <li class="footeritem" id="map"><a href="https://goo.gl/maps/6pr9obHjk56zZeMz8"></a></li>
+        </ul>
+    </footer>
+</html>
